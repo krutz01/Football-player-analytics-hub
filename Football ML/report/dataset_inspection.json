@@ -1,0 +1,530 @@
+{
+  "source_files": [
+    "data\\raw\\players_data-2025_2026.csv",
+    "data\\raw\\players_data_light-2025_2026.csv"
+  ],
+  "source_join_key": [
+    "Player",
+    "Squad",
+    "Comp"
+  ],
+  "source_join_validation": "One-to-one left merge preserving full-source row order, with both-way key coverage verified; all 2,839 player/team/competition records match, and all 53 overlapping light-source columns agree exactly with the full source.",
+  "rows": 2839,
+  "columns": 102,
+  "numeric_columns": 85,
+  "categorical_columns": 17,
+  "exact_duplicate_rows": 0,
+  "duplicate_player_team_competition_records": 0,
+  "rows_with_repeated_player_name": 303,
+  "unique_positions": [
+    "DF",
+    "DF,FW",
+    "DF,MF",
+    "FW",
+    "FW,MF",
+    "GK",
+    "MF",
+    "MF,DF",
+    "MF,FW"
+  ],
+  "unique_leagues": [
+    "de Bundesliga",
+    "eng Premier League",
+    "es La Liga",
+    "fr Ligue 1",
+    "it Serie A"
+  ],
+  "columns_missing_over_60_percent": [
+    "CS%",
+    "Save%",
+    "W",
+    "Saves",
+    "Rk_stats_keeper",
+    "GA90",
+    "D",
+    "Starts_stats_keeper",
+    "MP_stats_keeper",
+    "Born_stats_keeper",
+    "Pos_stats_keeper",
+    "Comp_stats_keeper",
+    "90s_stats_keeper",
+    "SoTA",
+    "Age_stats_keeper",
+    "Min_stats_keeper",
+    "Nation_stats_keeper",
+    "PKA",
+    "PKatt_stats_keeper",
+    "CS",
+    "L",
+    "GA",
+    "PKsv",
+    "PKm"
+  ],
+  "missing_value_pct": {
+    "CS%": 93.378,
+    "Save%": 93.308,
+    "W": 93.167,
+    "Saves": 93.167,
+    "Rk_stats_keeper": 93.167,
+    "GA90": 93.167,
+    "D": 93.167,
+    "Starts_stats_keeper": 93.167,
+    "MP_stats_keeper": 93.167,
+    "Born_stats_keeper": 93.167,
+    "Pos_stats_keeper": 93.167,
+    "Comp_stats_keeper": 93.167,
+    "90s_stats_keeper": 93.167,
+    "SoTA": 93.167,
+    "Age_stats_keeper": 93.167,
+    "Min_stats_keeper": 93.167,
+    "Nation_stats_keeper": 93.167,
+    "PKA": 93.167,
+    "PKatt_stats_keeper": 93.167,
+    "CS": 93.167,
+    "L": 93.167,
+    "GA": 93.167,
+    "PKsv": 93.167,
+    "PKm": 93.167,
+    "G/SoT": 29.095,
+    "SoT%": 17.26,
+    "G/Sh": 17.26,
+    "Mn/Sub": 13.279,
+    "Mn/Start": 12.751,
+    "On-Off": 0.881,
+    "Nation_stats_shooting": 0.106,
+    "Nation_stats_playing_time": 0.106,
+    "Nation_stats_misc": 0.106,
+    "Nation": 0.106,
+    "Born": 0.07,
+    "Age": 0.07,
+    "Age_stats_shooting": 0.07,
+    "Born_stats_shooting": 0.07,
+    "Born_stats_playing_time": 0.07,
+    "Age_stats_playing_time": 0.07,
+    "Born_stats_misc": 0.07,
+    "Age_stats_misc": 0.07,
+    "Ast": 0.0,
+    "G+A": 0.0,
+    "Gls": 0.0,
+    "Starts": 0.0,
+    "PKatt": 0.0,
+    "CrdY": 0.0,
+    "CrdR": 0.0,
+    "G-PK": 0.0,
+    "G+A-PK": 0.0,
+    "Pos": 0.0,
+    "Squad": 0.0,
+    "Comp": 0.0,
+    "Player": 0.0,
+    "Rk": 0.0,
+    "PK": 0.0,
+    "MP": 0.0,
+    "Min": 0.0,
+    "90s": 0.0,
+    "Sh": 0.0,
+    "Gls_stats_shooting": 0.0,
+    "PKatt_stats_shooting": 0.0,
+    "PK_stats_shooting": 0.0,
+    "90s_stats_shooting": 0.0,
+    "Comp_stats_shooting": 0.0,
+    "Pos_stats_shooting": 0.0,
+    "Rk_stats_shooting": 0.0,
+    "SoT/90": 0.0,
+    "SoT": 0.0,
+    "Min_stats_playing_time": 0.0,
+    "MP_stats_playing_time": 0.0,
+    "Pos_stats_playing_time": 0.0,
+    "Comp_stats_playing_time": 0.0,
+    "Rk_stats_playing_time": 0.0,
+    "Sh/90": 0.0,
+    "Starts_stats_playing_time": 0.0,
+    "Mn/MP": 0.0,
+    "Subs": 0.0,
+    "unSub": 0.0,
+    "onG": 0.0,
+    "PPM": 0.0,
+    "onGA": 0.0,
+    "90s_stats_playing_time": 0.0,
+    "Compl": 0.0,
+    "Min%": 0.0,
+    "Rk_stats_misc": 0.0,
+    "+/-90": 0.0,
+    "+/-": 0.0,
+    "Pos_stats_misc": 0.0,
+    "Comp_stats_misc": 0.0,
+    "90s_stats_misc": 0.0,
+    "CrdY_stats_misc": 0.0,
+    "CrdR_stats_misc": 0.0,
+    "2CrdY": 0.0,
+    "Fls": 0.0,
+    "Fld": 0.0,
+    "Off": 0.0,
+    "Crs": 0.0,
+    "Int": 0.0,
+    "TklW": 0.0,
+    "OG": 0.0
+  },
+  "minute_quantiles": {
+    "0.0": 1.0,
+    "0.1": 47.80000000000001,
+    "0.25": 320.5,
+    "0.5": 1074.0,
+    "0.75": 1972.5,
+    "0.9": 2654.2000000000003,
+    "0.95": 2932.3999999999996,
+    "0.99": 3303.0599999999986,
+    "1.0": 3420.0
+  },
+  "minutes_threshold": 450,
+  "rows_meeting_minutes_threshold": 1999,
+  "rows_below_threshold": 840,
+  "threshold_rationale": "450 minutes is five full matches: it limits rate-stat instability while retaining 1,999 of 2,839 records (70.4%). Low-minute rows remain in the cleaned dataset.",
+  "available_required_fields": {
+    "xG": "Absent; no xG-based experiment or xG plot is claimed.",
+    "xAG": "Absent; assists are used as the closest observed creative-output alternative.",
+    "key_passes": "Absent.",
+    "progressive_passes_carries_receptions": "Absent.",
+    "passing_volume_completion": "Absent.",
+    "available_shooting": [
+      "Gls",
+      "Ast",
+      "Sh",
+      "SoT"
+    ],
+    "available_defensive": [
+      "TklW",
+      "Int"
+    ],
+    "available_misc": [
+      "Fls",
+      "Fld",
+      "Off",
+      "Crs",
+      "CrdY",
+      "CrdR"
+    ],
+    "available_goalkeeper": [
+      "GA90",
+      "SoTA",
+      "Saves",
+      "Save%",
+      "CS%"
+    ]
+  },
+  "final_feature_lists": {
+    "regression": [
+      "Age",
+      "Min",
+      "Starts",
+      "Sh",
+      "Ast",
+      "Crs",
+      "TklW",
+      "Int",
+      "Fld",
+      "Fls",
+      "Off",
+      "CrdY",
+      "CrdR"
+    ],
+    "classification": [
+      "Age",
+      "Min",
+      "Starts",
+      "Gls",
+      "Ast",
+      "Sh",
+      "SoT",
+      "Crs",
+      "TklW",
+      "Int",
+      "Fld",
+      "Fls",
+      "Off",
+      "CrdY",
+      "CrdR",
+      "GA90",
+      "SoTA",
+      "Saves",
+      "Save%",
+      "CS%"
+    ],
+    "clustering": [
+      "Gls_per90",
+      "Ast_per90",
+      "Sh_per90",
+      "SoT_per90",
+      "Crs_per90",
+      "TklW_per90",
+      "Int_per90",
+      "Fld_per90",
+      "Fls_per90",
+      "Off_per90",
+      "Saves_per90",
+      "GA90",
+      "Save%",
+      "CS%"
+    ]
+  },
+  "high_correlation_pairs_ge_0_95": [
+    {
+      "feature_1": "Rk",
+      "feature_2": "Rk_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Rk",
+      "feature_2": "Rk_stats_misc",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "CrdY",
+      "feature_2": "CrdY_stats_misc",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Age",
+      "feature_2": "Age_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Age",
+      "feature_2": "Age_stats_keeper",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "90s_stats_misc",
+      "feature_2": "90s_stats_playing_time",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "CrdR",
+      "feature_2": "CrdR_stats_misc",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Starts",
+      "feature_2": "Starts_stats_playing_time",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "90s_stats_keeper",
+      "feature_2": "90s_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Born",
+      "feature_2": "Born_stats_playing_time",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "90s_stats_keeper",
+      "feature_2": "90s_stats_playing_time",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "90s_stats_keeper",
+      "feature_2": "90s_stats_misc",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "90s",
+      "feature_2": "90s_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Born_stats_keeper",
+      "feature_2": "Born_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "90s",
+      "feature_2": "90s_stats_misc",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "90s",
+      "feature_2": "90s_stats_keeper",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Born_stats_keeper",
+      "feature_2": "Born_stats_playing_time",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Born_stats_misc",
+      "feature_2": "Born_stats_playing_time",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "MP_stats_keeper",
+      "feature_2": "MP_stats_playing_time",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Born_stats_keeper",
+      "feature_2": "Born_stats_misc",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "90s",
+      "feature_2": "90s_stats_playing_time",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "90s_stats_playing_time",
+      "feature_2": "90s_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Born_stats_playing_time",
+      "feature_2": "Born_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Age_stats_playing_time",
+      "feature_2": "Age_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Born",
+      "feature_2": "Born_stats_keeper",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Age_stats_keeper",
+      "feature_2": "Age_stats_playing_time",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Age_stats_keeper",
+      "feature_2": "Age_stats_misc",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "90s_stats_misc",
+      "feature_2": "90s_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Age_stats_keeper",
+      "feature_2": "Age_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Age_stats_misc",
+      "feature_2": "Age_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Age",
+      "feature_2": "Age_stats_playing_time",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Age",
+      "feature_2": "Age_stats_misc",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "MP",
+      "feature_2": "MP_stats_playing_time",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "PK",
+      "feature_2": "PK_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "PKatt",
+      "feature_2": "PKatt_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Gls",
+      "feature_2": "Gls_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Age_stats_misc",
+      "feature_2": "Age_stats_playing_time",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Born",
+      "feature_2": "Born_stats_misc",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Rk_stats_misc",
+      "feature_2": "Rk_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Born_stats_misc",
+      "feature_2": "Born_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Min",
+      "feature_2": "Min_stats_keeper",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Min",
+      "feature_2": "Min_stats_playing_time",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "MP",
+      "feature_2": "MP_stats_keeper",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Starts_stats_keeper",
+      "feature_2": "Starts_stats_playing_time",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Min_stats_keeper",
+      "feature_2": "Min_stats_playing_time",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Starts",
+      "feature_2": "Starts_stats_keeper",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "Born",
+      "feature_2": "Born_stats_shooting",
+      "correlation": 1.0
+    },
+    {
+      "feature_1": "90s_stats_keeper",
+      "feature_2": "Min_stats_playing_time",
+      "correlation": 0.9999992180602177
+    },
+    {
+      "feature_1": "90s",
+      "feature_2": "Min_stats_keeper",
+      "correlation": 0.9999992180602177
+    },
+    {
+      "feature_1": "90s_stats_shooting",
+      "feature_2": "Min_stats_keeper",
+      "correlation": 0.9999992180602175
+    }
+  ],
+  "feature_selection_notes": [
+    "Regression target is Gls. G+A, G-PK, G+A-PK, Gls_stats_shooting, G/Sh, G/SoT, and goals-per-90 are excluded to avoid direct target leakage.",
+    "xG is absent; Sh is retained as the closest available shot-volume feature. SoT is excluded from regression because it overlaps strongly with Sh (r=0.954).",
+    "Repeated FBref table columns such as Min_stats_playing_time and Gls_stats_shooting are not independent features.",
+    "Identifiers, rank, nationality, squad, league, birth year, and position text are not model inputs.",
+    "Classification uses observed performance fields only; Pos supplies the target through its first listed position, not as an input.",
+    "Clustering uses per-90 rates for playing statistics and observed goalkeeper rates; Position_Category is never used for fitting, choosing K, or PCA.",
+    "Extreme but valid players are retained; IQR outliers are not deleted because they may be genuine high-performance seasons."
+  ]
+}

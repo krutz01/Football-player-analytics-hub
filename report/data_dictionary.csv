@@ -1,0 +1,103 @@
+column,data_type,description,missing_pct,derived,source_files,used,ml_task
+Rk,int64,FBref rank in the source table; not a performance feature.,0.00,True,full + light (matched and cross-checked),False,"No — duplicate, derived, or table-repeat field"
+Player,str,Player name as reported by FBref.,0.00,False,full + light (matched and cross-checked),False,No — identifier/context only
+Nation,str,Player nationality (country code and nationality text).,0.11,False,full + light (matched and cross-checked),False,No — identifier/context only
+Pos,str,Detailed FBref position label; comma-separated positions are ordered.,0.00,False,full + light (matched and cross-checked),True,Classification target source only; never an input
+Squad,str,Club/team name for this player-season record.,0.00,False,full + light (matched and cross-checked),False,No — identifier/context only
+Comp,str,Competition / league name.,0.00,False,full + light (matched and cross-checked),False,No — identifier/context only
+Age,float64,Age during the season; source may encode fractional years.,0.07,False,full + light (matched and cross-checked),True,"Regression, Classification"
+Born,float64,Birth year.,0.07,False,full + light (matched and cross-checked),False,No — identifier/context only
+MP,int64,Matches played.,0.00,False,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)
+Starts,int64,Matches started.,0.00,False,full + light (matched and cross-checked),True,"Regression, Classification"
+Min,int64,Minutes played.,0.00,False,full + light (matched and cross-checked),True,Regression
+90s,float64,Estimated 90-minute periods played (minutes divided by 90).,0.00,True,full + light (matched and cross-checked),False,"No — duplicate, derived, or table-repeat field"
+Gls,int64,Goals scored; regression target.,0.00,False,full + light (matched and cross-checked),True,Regression target
+Ast,int64,Assists.,0.00,False,full + light (matched and cross-checked),True,Regression
+G+A,int64,Goals plus assists; derived from Gls + Ast.,0.00,True,full + light (matched and cross-checked),False,"No — duplicate, derived, or table-repeat field"
+G-PK,int64,Non-penalty goals; derived from Gls - PK.,0.00,True,full + light (matched and cross-checked),False,"No — duplicate, derived, or table-repeat field"
+PK,int64,Penalty-kick goals.,0.00,False,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)
+PKatt,int64,Penalty kicks attempted (or attempts faced when repeated in the keeper table).,0.00,False,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)
+CrdY,int64,Yellow cards.,0.00,False,full + light (matched and cross-checked),True,Regression
+CrdR,int64,Red cards.,0.00,False,full + light (matched and cross-checked),True,Regression
+G+A-PK,float64,Non-penalty goals plus assists; derived from G-PK + Ast.,0.00,True,full + light (matched and cross-checked),False,"No — duplicate, derived, or table-repeat field"
+Rk_stats_keeper,float64,FBref rank in the source table; not a performance feature. Repeated in the FBref keeper table.,93.17,False,full,False,"No — duplicate, derived, or table-repeat field"
+Nation_stats_keeper,str,Player nationality (country code and nationality text). Repeated in the FBref keeper table.,93.17,False,full,False,"No — duplicate, derived, or table-repeat field"
+Pos_stats_keeper,str,Detailed FBref position label; comma-separated positions are ordered. Repeated in the FBref keeper table.,93.17,False,full,False,"No — duplicate, derived, or table-repeat field"
+Comp_stats_keeper,str,Competition / league name. Repeated in the FBref keeper table.,93.17,False,full,False,"No — duplicate, derived, or table-repeat field"
+Age_stats_keeper,float64,Age during the season; source may encode fractional years. Repeated in the FBref keeper table.,93.17,False,full,False,"No — duplicate, derived, or table-repeat field"
+Born_stats_keeper,float64,Birth year. Repeated in the FBref keeper table.,93.17,False,full,False,"No — duplicate, derived, or table-repeat field"
+MP_stats_keeper,float64,Matches played. Repeated in the FBref keeper table.,93.17,False,full,False,"No — duplicate, derived, or table-repeat field"
+Starts_stats_keeper,float64,Matches started. Repeated in the FBref keeper table.,93.17,False,full,False,"No — duplicate, derived, or table-repeat field"
+Min_stats_keeper,float64,Minutes played. Repeated in the FBref keeper table.,93.17,False,full,False,"No — duplicate, derived, or table-repeat field"
+90s_stats_keeper,float64,Estimated 90-minute periods played (minutes divided by 90). Repeated in the FBref keeper table.,93.17,False,full,False,"No — duplicate, derived, or table-repeat field"
+GA,float64,Goals conceded while the player was goalkeeper.,93.17,False,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)
+GA90,float64,Goals conceded per 90 minutes as goalkeeper.,93.17,True,full + light (matched and cross-checked),True,Clustering/PCA
+SoTA,float64,Shots on target faced by a goalkeeper.,93.17,False,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)
+Saves,float64,Goalkeeper saves.,93.17,False,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)
+Save%,float64,Goalkeeper save percentage.,93.31,True,full + light (matched and cross-checked),True,Clustering/PCA
+W,float64,Goalkeeper wins.,93.17,False,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)
+D,float64,Goalkeeper draws.,93.17,False,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)
+L,float64,Goalkeeper losses.,93.17,False,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)
+CS,float64,Goalkeeper clean sheets.,93.17,False,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)
+CS%,float64,Goalkeeper clean-sheet percentage.,93.38,True,full + light (matched and cross-checked),True,Clustering/PCA
+PKatt_stats_keeper,float64,Penalty kicks attempted (or attempts faced when repeated in the keeper table). Repeated in the FBref keeper table.,93.17,False,full + light (matched and cross-checked),False,"No — duplicate, derived, or table-repeat field"
+PKA,float64,Penalty kicks scored against a goalkeeper.,93.17,False,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)
+PKsv,float64,Penalty kicks saved.,93.17,False,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)
+PKm,float64,Penalty kicks missed by opponents.,93.17,False,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)
+Rk_stats_shooting,int64,FBref rank in the source table; not a performance feature. Repeated in the FBref shooting table.,0.00,False,full,False,"No — duplicate, derived, or table-repeat field"
+Nation_stats_shooting,str,Player nationality (country code and nationality text). Repeated in the FBref shooting table.,0.11,False,full,False,"No — duplicate, derived, or table-repeat field"
+Pos_stats_shooting,str,Detailed FBref position label; comma-separated positions are ordered. Repeated in the FBref shooting table.,0.00,False,full,False,"No — duplicate, derived, or table-repeat field"
+Comp_stats_shooting,str,Competition / league name. Repeated in the FBref shooting table.,0.00,False,full,False,"No — duplicate, derived, or table-repeat field"
+Age_stats_shooting,float64,Age during the season; source may encode fractional years. Repeated in the FBref shooting table.,0.07,False,full,False,"No — duplicate, derived, or table-repeat field"
+Born_stats_shooting,float64,Birth year. Repeated in the FBref shooting table.,0.07,False,full,False,"No — duplicate, derived, or table-repeat field"
+90s_stats_shooting,float64,Estimated 90-minute periods played (minutes divided by 90). Repeated in the FBref shooting table.,0.00,False,full,False,"No — duplicate, derived, or table-repeat field"
+Gls_stats_shooting,int64,Goals scored; regression target. Repeated in the FBref shooting table.,0.00,False,full,False,"No — duplicate, derived, or table-repeat field"
+Sh,int64,Shots total.,0.00,False,full + light (matched and cross-checked),True,Regression
+SoT,int64,Shots on target.,0.00,False,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)
+SoT%,float64,Percentage of shots on target.,17.26,True,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)
+Sh/90,float64,Shots per 90 minutes.,0.00,True,full + light (matched and cross-checked),False,"No — duplicate, derived, or table-repeat field"
+SoT/90,float64,Shots on target per 90 minutes.,0.00,True,full + light (matched and cross-checked),False,"No — duplicate, derived, or table-repeat field"
+G/Sh,float64,Goals per shot; derived shooting efficiency.,17.26,True,full + light (matched and cross-checked),False,"No — duplicate, derived, or table-repeat field"
+G/SoT,float64,Goals per shot on target; derived shooting efficiency.,29.09,True,full + light (matched and cross-checked),False,"No — duplicate, derived, or table-repeat field"
+PK_stats_shooting,int64,Penalty-kick goals. Repeated in the FBref shooting table.,0.00,False,full + light (matched and cross-checked),False,"No — duplicate, derived, or table-repeat field"
+PKatt_stats_shooting,int64,Penalty kicks attempted (or attempts faced when repeated in the keeper table). Repeated in the FBref shooting table.,0.00,False,full + light (matched and cross-checked),False,"No — duplicate, derived, or table-repeat field"
+Rk_stats_playing_time,int64,FBref rank in the source table; not a performance feature. Repeated in the FBref playing time table.,0.00,False,full,False,"No — duplicate, derived, or table-repeat field"
+Nation_stats_playing_time,str,Player nationality (country code and nationality text). Repeated in the FBref playing time table.,0.11,False,full,False,"No — duplicate, derived, or table-repeat field"
+Pos_stats_playing_time,str,Detailed FBref position label; comma-separated positions are ordered. Repeated in the FBref playing time table.,0.00,False,full,False,"No — duplicate, derived, or table-repeat field"
+Comp_stats_playing_time,str,Competition / league name. Repeated in the FBref playing time table.,0.00,False,full,False,"No — duplicate, derived, or table-repeat field"
+Age_stats_playing_time,float64,Age during the season; source may encode fractional years. Repeated in the FBref playing time table.,0.07,False,full,False,"No — duplicate, derived, or table-repeat field"
+Born_stats_playing_time,float64,Birth year. Repeated in the FBref playing time table.,0.07,False,full,False,"No — duplicate, derived, or table-repeat field"
+MP_stats_playing_time,int64,Matches played. Repeated in the FBref playing time table.,0.00,False,full,False,"No — duplicate, derived, or table-repeat field"
+Min_stats_playing_time,int64,Minutes played. Repeated in the FBref playing time table.,0.00,False,full,False,"No — duplicate, derived, or table-repeat field"
+Mn/MP,int64,Minutes per appearance.,0.00,True,full,False,No — not selected (unavailable/inappropriate/redundant)
+Min%,float64,Share of available team minutes played.,0.00,True,full,False,"No — duplicate, derived, or table-repeat field"
+90s_stats_playing_time,float64,Estimated 90-minute periods played (minutes divided by 90). Repeated in the FBref playing time table.,0.00,False,full,False,"No — duplicate, derived, or table-repeat field"
+Starts_stats_playing_time,int64,Matches started. Repeated in the FBref playing time table.,0.00,False,full,False,"No — duplicate, derived, or table-repeat field"
+Mn/Start,float64,Minutes per start.,12.75,True,full,False,No — not selected (unavailable/inappropriate/redundant)
+Compl,int64,Full 90-minute appearances.,0.00,False,full,False,No — not selected (unavailable/inappropriate/redundant)
+Subs,int64,Substitute appearances.,0.00,False,full,False,No — not selected (unavailable/inappropriate/redundant)
+Mn/Sub,float64,Minutes per substitute appearance.,13.28,True,full,False,No — not selected (unavailable/inappropriate/redundant)
+unSub,int64,Unused substitute appearances.,0.00,False,full,False,No — not selected (unavailable/inappropriate/redundant)
+PPM,float64,Team points per match with the player appearing.,0.00,True,full,False,No — not selected (unavailable/inappropriate/redundant)
+onG,int64,Goals scored by the team while the player was on the pitch.,0.00,False,full,False,No — not selected (unavailable/inappropriate/redundant)
+onGA,int64,Goals conceded by the team while the player was on the pitch.,0.00,False,full,False,No — not selected (unavailable/inappropriate/redundant)
++/-,int64,Team goal difference while the player was on the pitch.,0.00,False,full,False,No — not selected (unavailable/inappropriate/redundant)
++/-90,float64,Team goal difference per 90 minutes while on the pitch.,0.00,True,full,False,No — not selected (unavailable/inappropriate/redundant)
+On-Off,float64,Team goal-difference change per 90 on versus off the pitch.,0.88,True,full,False,No — not selected (unavailable/inappropriate/redundant)
+Rk_stats_misc,int64,FBref rank in the source table; not a performance feature. Repeated in the FBref misc table.,0.00,False,full,False,"No — duplicate, derived, or table-repeat field"
+Nation_stats_misc,str,Player nationality (country code and nationality text). Repeated in the FBref misc table.,0.11,False,full,False,"No — duplicate, derived, or table-repeat field"
+Pos_stats_misc,str,Detailed FBref position label; comma-separated positions are ordered. Repeated in the FBref misc table.,0.00,False,full,False,"No — duplicate, derived, or table-repeat field"
+Comp_stats_misc,str,Competition / league name. Repeated in the FBref misc table.,0.00,False,full,False,"No — duplicate, derived, or table-repeat field"
+Age_stats_misc,float64,Age during the season; source may encode fractional years. Repeated in the FBref misc table.,0.07,False,full,False,"No — duplicate, derived, or table-repeat field"
+Born_stats_misc,float64,Birth year. Repeated in the FBref misc table.,0.07,False,full,False,"No — duplicate, derived, or table-repeat field"
+90s_stats_misc,float64,Estimated 90-minute periods played (minutes divided by 90). Repeated in the FBref misc table.,0.00,False,full,False,"No — duplicate, derived, or table-repeat field"
+CrdY_stats_misc,int64,Yellow cards. Repeated in the FBref misc table.,0.00,False,full + light (matched and cross-checked),False,"No — duplicate, derived, or table-repeat field"
+CrdR_stats_misc,int64,Red cards. Repeated in the FBref misc table.,0.00,False,full + light (matched and cross-checked),False,"No — duplicate, derived, or table-repeat field"
+2CrdY,int64,Second yellow cards.,0.00,False,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)
+Fls,int64,Fouls committed.,0.00,False,full + light (matched and cross-checked),True,Regression
+Fld,int64,Fouls drawn.,0.00,False,full + light (matched and cross-checked),True,Regression
+Off,int64,Offsides.,0.00,False,full,True,Regression
+Crs,int64,Crosses.,0.00,False,full + light (matched and cross-checked),True,Regression
+Int,int64,Interceptions.,0.00,False,full + light (matched and cross-checked),True,Regression
+TklW,int64,Tackles won.,0.00,False,full + light (matched and cross-checked),True,Regression
+OG,int64,Own goals.,0.00,False,full + light (matched and cross-checked),False,No — not selected (unavailable/inappropriate/redundant)

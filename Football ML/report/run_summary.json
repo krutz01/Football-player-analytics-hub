@@ -1,0 +1,14 @@
+{
+  "players": 2839,
+  "leagues": 5,
+  "average_goals": 1.6604438182458612,
+  "average_assists": 1.1592109897851357,
+  "average_age": 24.85583362707085,
+  "minutes_threshold": 450,
+  "regression_best_model": "Ridge Regression",
+  "classification_best_model": "Support Vector Machine",
+  "cluster_count": 3,
+  "pca_components": 9,
+  "xg_available": false,
+  "xag_available": false
+}

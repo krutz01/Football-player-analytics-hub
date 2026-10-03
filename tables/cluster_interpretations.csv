@@ -1,0 +1,5 @@
+cluster,archetype,top_characteristics,note
+0,Goal scorer + playmaker,"Sh_per90, Crs_per90, Fld_per90",Post-hoc interpretation based on cluster means
+1,Defensive player,"Save%, CS%, Saves_per90",Post-hoc interpretation based on cluster means
+2,Goalkeeper profile,"Save%, CS%, Saves_per90",Post-hoc interpretation based on cluster means
+3,All-round outfield player,"Save%, CS%, Saves_per90",Post-hoc interpretation based on cluster means

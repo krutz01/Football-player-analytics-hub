@@ -1,0 +1,12 @@
+k,bic,aic,silhouette,selected,selection_note
+2,36822.295348701,36615.080462324484,0.500277034074627,False,Chosen from K>=3 by silhouette (BIC/AIC and post-fit profile interpretation are supporting evidence); K=2 is a coarse keeper/outfield split.
+3,33637.68658437207,33324.06405364005,0.17342654823144274,True,Chosen from K>=3 by silhouette (BIC/AIC and post-fit profile interpretation are supporting evidence); K=2 is a coarse keeper/outfield split.
+4,31767.98882134581,31347.95864625828,0.1362205315860134,False,Chosen from K>=3 by silhouette (BIC/AIC and post-fit profile interpretation are supporting evidence); K=2 is a coarse keeper/outfield split.
+5,31704.365328227417,31177.927508784378,0.1635169810887301,False,Chosen from K>=3 by silhouette (BIC/AIC and post-fit profile interpretation are supporting evidence); K=2 is a coarse keeper/outfield split.
+6,30722.890795880576,30090.04533208203,0.1392973822524381,False,Chosen from K>=3 by silhouette (BIC/AIC and post-fit profile interpretation are supporting evidence); K=2 is a coarse keeper/outfield split.
+7,29878.348715533983,29139.09560737993,0.08600822912126832,False,Chosen from K>=3 by silhouette (BIC/AIC and post-fit profile interpretation are supporting evidence); K=2 is a coarse keeper/outfield split.
+8,29811.790831753457,28966.130079243896,0.09883437316152799,False,Chosen from K>=3 by silhouette (BIC/AIC and post-fit profile interpretation are supporting evidence); K=2 is a coarse keeper/outfield split.
+9,29337.274889424185,28385.20649255912,0.08651303278589702,False,Chosen from K>=3 by silhouette (BIC/AIC and post-fit profile interpretation are supporting evidence); K=2 is a coarse keeper/outfield split.
+10,29178.931289373788,28120.455248153212,0.08063334285653517,False,Chosen from K>=3 by silhouette (BIC/AIC and post-fit profile interpretation are supporting evidence); K=2 is a coarse keeper/outfield split.
+11,29000.5204065737,27835.63672099762,0.06195559209103375,False,Chosen from K>=3 by silhouette (BIC/AIC and post-fit profile interpretation are supporting evidence); K=2 is a coarse keeper/outfield split.
+12,28697.01434408374,27425.723014152147,0.0644781317211724,False,Chosen from K>=3 by silhouette (BIC/AIC and post-fit profile interpretation are supporting evidence); K=2 is a coarse keeper/outfield split.

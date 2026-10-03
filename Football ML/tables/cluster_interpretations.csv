@@ -1,0 +1,4 @@
+cluster,archetype_interpretation,top_characteristics,interpretation_note
+0,High attacking/wide-involvement profile,"Crs_per90, Sh_per90, Fld_per90",Post-hoc statistical description; not a label supplied to clustering
+1,Defensive-action profile,"Fls_per90, Int_per90, TklW_per90",Post-hoc statistical description; not a label supplied to clustering
+2,Goalkeeper statistical profile,"Save%, CS%, Saves_per90",Post-hoc statistical description; not a label supplied to clustering
