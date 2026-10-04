@@ -68,7 +68,7 @@ if _pitch_bg_path.exists():
     _pitch_b64 = base64.b64encode(_pitch_bg_path.read_bytes()).decode()
     _bg_image_css = f"""
     .stApp {{
-        background-image: url("data:image/jpeg;base64,{_pitch_b64}") !important;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)), url("data:image/jpeg;base64,{_pitch_b64}") !important;
         background-size: cover !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
@@ -91,14 +91,14 @@ st.markdown(
 /* Global Reset & Theme */
 html, body, [class*="css"], .stApp {{
     font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif !important;
-    color: #0B1F33;
+    color: #FFFFFF;
 }}
 
 /* Background with football pitch image */
 {_bg_image_css}
 
 /* ═══════════════════════════════════════════════
-   TEXT VISIBILITY — high contrast dark text on light elements
+   TEXT VISIBILITY — light text on dark stadium background
    ═══════════════════════════════════════════════ */
 
 /* Page content text */
@@ -108,7 +108,7 @@ html, body, [class*="css"], .stApp {{
 .stApp .stMarkdown span,
 .stApp .stMarkdown li,
 .stApp .stText {{
-    color: #0B1F33 !important;
+    color: #FFFFFF !important;
 }}
 
 /* Form widget labels */
@@ -118,7 +118,7 @@ html, body, [class*="css"], .stApp {{
 .stApp div[data-testid="stWidgetLabel"],
 .stApp div[data-testid="stWidgetLabel"] p,
 .stApp div[data-testid="stWidgetLabel"] span {{
-    color: #0B1F33 !important;
+    color: #FFFFFF !important;
     font-weight: 700 !important;
     font-size: 0.95rem !important;
 }}
@@ -127,7 +127,7 @@ html, body, [class*="css"], .stApp {{
 .stApp .stRadio div[role="radiogroup"] label,
 .stApp .stRadio div[role="radiogroup"] label p,
 .stApp .stRadio div[role="radiogroup"] label span {{
-    color: #0B1F33 !important;
+    color: #FFFFFF !important;
     font-weight: 600 !important;
 }}
 
@@ -158,7 +158,7 @@ html, body, [class*="css"], .stApp {{
 /* Captions and helper subtitles */
 .stApp .stCaption, 
 .stApp .stCaption p {{
-    color: #475569 !important;
+    color: #CBD5E1 !important;
     font-size: 0.9rem !important;
     font-weight: 500 !important;
 }}
@@ -168,41 +168,41 @@ html, body, [class*="css"], .stApp {{
 .stApp .stAlert span,
 .stApp div[data-testid="stNotification"] p,
 .stApp div[data-testid="stNotification"] span {{
-    color: #0B1F33 !important;
+    color: #FFFFFF !important;
 }}
 
 /* Expanders */
 .stApp div[data-testid="stExpander"] summary span,
 .stApp div[data-testid="stExpander"] summary p {{
-    color: #0B1F33 !important;
+    color: #FFFFFF !important;
     font-weight: 700 !important;
 }}
 .stApp div[data-testid="stExpander"] div[data-testid="stExpanderDetails"] * {{
-    color: #0B1F33 !important;
+    color: #FFFFFF !important;
 }}
 
 /* Built-in Metrics */
 .stApp div[data-testid="stMetric"] label {{
-    color: #475569 !important;
+    color: #CBD5E1 !important;
 }}
 .stApp div[data-testid="stMetric"] div[data-testid="stMetricValue"] {{
-    color: #0B1F33 !important;
+    color: #FFFFFF !important;
 }}
 
 /* Headings */
 h1, h2, h3, .bebas-header {{
     font-family: 'Bebas Neue', sans-serif !important;
     letter-spacing: 0.04em !important;
-    color: #0B1F33 !important;
+    color: #FFFFFF !important;
 }}
 h4, h5, h6 {{
     font-family: 'Space Grotesk', sans-serif !important;
-    color: #0B1F33 !important;
+    color: #FFFFFF !important;
     font-weight: 700 !important;
 }}
 
 .stApp strong, .stApp b {{
-    color: #0B1F33 !important;
+    color: #FFFFFF !important;
 }}
 
 /* ═══════════════════════════════════════════════
@@ -232,7 +232,7 @@ h4, h5, h6 {{
 }}
 .brand-header .brand-subtitle {{
     font-size: 0.95rem !important;
-    color: #CBD5E1 !important;
+    color: #FFFFFF !important;
     margin-top: 6px !important;
     font-weight: 500 !important;
 }}
@@ -397,12 +397,12 @@ h4, h5, h6 {{
    ═══════════════════════════════════════════════ */
 .stTabs [data-baseweb="tab-list"] {{
     gap: 8px !important;
-    background-color: rgba(255,255,255,0.95) !important;
+    background-color: rgba(11, 31, 51, 0.7) !important;
     padding: 8px 12px !important;
     border-radius: 14px !important;
-    border: 1px solid #CBD5E1 !important;
-    box-shadow: 0 2px 10px rgba(11, 31, 51, 0.05) !important;
-    backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(12px) !important;
 }}
 .stTabs [data-baseweb="tab"] {{
     border-radius: 10px !important;
@@ -413,13 +413,14 @@ h4, h5, h6 {{
 .stTabs [data-baseweb="tab"] p,
 .stTabs [data-baseweb="tab"] span,
 .stTabs [data-baseweb="tab"] div {{
-    color: #334155 !important;
+    color: #FFFFFF !important;
     font-weight: 600 !important;
     font-size: 0.95rem !important;
 }}
 .stTabs [aria-selected="true"] {{
-    background-color: #0B1F33 !important;
-    box-shadow: 0 4px 12px rgba(11, 31, 51, 0.2) !important;
+    background-color: rgba(22, 199, 132, 0.25) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid rgba(22, 199, 132, 0.4) !important;
 }}
 .stTabs [aria-selected="true"] *,
 .stTabs [aria-selected="true"] p,
@@ -435,13 +436,13 @@ h4, h5, h6 {{
 .section-title {{
     font-family: 'Bebas Neue', sans-serif !important;
     font-size: 1.8rem !important;
-    color: #0B1F33 !important;
+    color: #FFFFFF !important;
     margin: 28px 0 8px 0 !important;
     letter-spacing: 0.03em !important;
 }}
 .section-desc {{
     font-size: 0.95rem !important;
-    color: #475569 !important;
+    color: #CBD5E1 !important;
     margin-bottom: 20px !important;
     margin-top: -6px !important;
     font-weight: 500 !important;
